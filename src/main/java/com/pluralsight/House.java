@@ -56,19 +56,19 @@ public class House extends Asset{
          switch (condition){
              case 1 -> {
                  x = 180;
-
+                break;
              }
              case 2 -> {
                  x = 130;
-
+                break;
              }
              case 3 -> {
                  x = 90;
-
+                 break;
              }
              case 4 -> {
                  x = 80;
-
+                 break;
              }
          }
          return value;
