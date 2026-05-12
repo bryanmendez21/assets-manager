@@ -53,21 +53,26 @@ public class House extends Asset{
          int x = 1;
          double value = ((x * squareFoot) + (.25 * squareFoot));
 
-        if (condition == 1){
-            x = 180;
-            return value;
-        } else if(condition == 2){
-            x = 130;
-            return value;
-        } else if (condition == 3){
-            x = 90;
-            return value;
-        } else if (condition == 4){
-            x = 80;
-            return value;
-        } else {
-            return 0;
-        }
+         switch (condition){
+             case 1 -> {
+                 x = 180;
+
+             }
+             case 2 -> {
+                 x = 130;
+
+             }
+             case 3 -> {
+                 x = 90;
+
+             }
+             case 4 -> {
+                 x = 80;
+
+             }
+         }
+         return value;
+
     }
 
 }
